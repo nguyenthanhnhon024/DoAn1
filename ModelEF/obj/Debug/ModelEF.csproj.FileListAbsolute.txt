@@ -1,0 +1,32 @@
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\bin\Debug\ModelEF.dll.config
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\bin\Debug\ModelEF.dll
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\bin\Debug\ModelEF.pdb
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\bin\Debug\EntityFramework.dll
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\bin\Debug\EntityFramework.SqlServer.dll
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\bin\Debug\EntityFramework.xml
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\bin\Debug\EntityFramework.SqlServer.xml
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\obj\Debug\ModelEF.csprojAssemblyReference.cache
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\obj\Debug\ModelEF.csproj.CoreCompileInputs.cache
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\obj\Debug\ModelEF.csproj.CopyComplete
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\obj\Debug\ModelEF.dll
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\obj\Debug\ModelEF.pdb
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\bin\Debug\PagedList.dll
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\bin\Debug\PagedList.Mvc.dll
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\bin\Debug\PagedList.xml
+D:\MÔN HỌC\QLHS_DoanVien\ModelEF\bin\Debug\PagedList.Mvc.xml
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\bin\Debug\ModelEF.dll.config
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\bin\Debug\ModelEF.dll
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\bin\Debug\ModelEF.pdb
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\bin\Debug\EntityFramework.dll
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\bin\Debug\EntityFramework.SqlServer.dll
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\bin\Debug\PagedList.dll
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\bin\Debug\PagedList.Mvc.dll
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\bin\Debug\EntityFramework.xml
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\bin\Debug\EntityFramework.SqlServer.xml
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\bin\Debug\PagedList.xml
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\bin\Debug\PagedList.Mvc.xml
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\obj\Debug\ModelEF.csproj.AssemblyReference.cache
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\obj\Debug\ModelEF.csproj.CoreCompileInputs.cache
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\obj\Debug\ModelEF.csproj.CopyComplete
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\obj\Debug\ModelEF.dll
+D:\MÔN HỌC\3_Kì 320\ĐAPM1\QLHS_DoanVien\ModelEF\obj\Debug\ModelEF.pdb

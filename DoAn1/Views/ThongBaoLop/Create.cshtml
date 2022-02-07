@@ -1,0 +1,187 @@
+﻿@model ModelEF.Model.thongbaolop
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cán Bộ Chi Đoàn</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="~/assets/CanBoChiDoan/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="~/assets/CanBoChiDoan/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="~/assets/CanBoChiDoan/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="~/assets/CanBoChiDoan/vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="~/assets/CanBoChiDoan/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <header class="align-items-start app-header flex-column flex-md-row navbar navbar-expand-md navbar-light" style="background-color:rgb(192, 250, 211);">
+            <div class="align-items-baseline d-flex flex-row navbar-brand p-lg-3 pl-3 pr-3 pt-3">
+                <a class="" href="#"><h3><b style="color: black;">Cán Bộ Chi Đoàn</b></h3></a>
+            </div>
+
+            <ul class="nav navbar-nav ml-md-auto flex-row navbar-top-links">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-user">
+                        <a class="dropdown-item" href="#"><i class="fa fa-gear fa-fw"></i> Đổi mật khẩu</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="@Url.Action("Index", "Login" )" class="dropdown-item"><i class="fa fa-sign-out fa-fw"></i> Đăng xuất</a>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <div class="d-md-flex">
+            <div class="sidebar" role="navigation">
+                <div class="sidebar-nav collapse navbar-collapse show" id="side-menu-wrapper">
+                    <ul class="nav navbar-nav navbar-collapse flex-column side-nav list-group" id="side-menu">
+                        <li class="list-group-item">
+                            <a href="#"><i class="fa fa-edit fa-fw"></i> Cập nhật thông tin tài khoản</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="@Url.Action("Index", "ThongBaoLop")"><i class="fa fa-bullhorn fa-fw"></i> <b style="color: red;">Đăng thông báo lớp</b></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#"><i class="fa fa-bell fa-fw"></i> Cập nhật thông báo</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="@Url.Action("Index", "HoatDong")"><i class="fa fa-certificate fa-fw"></i> Duyệt đăng kí hoạt động đoàn</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#"><i class="fa fa-money fa-fw"></i> Xác nhận tình trạng đoàn phí</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#"><i class="fa fa-eye fa-fw"></i> Xem danh sách đoàn viên</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#"><i class="fa fa-bullseye fa-fw"></i> Xem tình trạng đoàn phí</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#"><i class="fa fa-paste fa-fw"></i> Xem thông báo đoàn</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+
+            <div id="page-wrapper" class="p-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div>
+                            <h2 style="text-align: center;">Đăng thông báo lớp</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- /.col-xl-6 (nested) -->
+                                <div class="col-xl-12">
+                                    <div class="mb-6">
+                                        @using (Html.BeginForm("Create", "ThongBaoLop", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                        {
+                                            @Html.AntiForgeryToken()
+
+                                        <div class="form-horizontal">
+                                            <div class="col-lg-12 form-group">
+                                                <div class="col-md-6">
+                                                    @Html.ActionLink("Quay lại", "Index", "ThongBaoLop", null, new { @class = "btn btn-primary" })
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 form-group">
+                                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                                <div class="form-group">
+                                                    <label class="col-md-2">Tiêu đề</label>
+                                                    <div class="col-md-12">
+                                                        @Html.TextBoxFor(model => model.tieuDe, new { @class = "form-control", @placeholder = "Nhập tiêu đề thông báo" })
+                                                        @Html.ValidationMessageFor(model => model.tieuDe, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2">Nội dung</label>
+                                                    <div class="col-md-12">
+                                                        @Html.TextAreaFor(model => model.noiDung, new { @class = "form-control", @placeholder = "Nhập nội dung thông báo" })
+                                                        @Html.ValidationMessageFor(model => model.noiDung, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-2 col-md-10">
+                                                        <input type="submit" value="Tạo thông báo mới" class="btn btn-danger" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        }
+                                    </div>
+                                </div>
+                                <!-- /.col-xl-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="~/assets/CanBoChiDoan/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/assets/CanBoChiDoan/vendor/popper/popper.min.js"></script>
+    <script src="~/assets/CanBoChiDoan/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="~/assets/CanBoChiDoan/vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="~/assets/CanBoChiDoan/vendor/raphael/raphael.min.js"></script>
+    <script src="~/assets/CanBoChiDoan/vendor/morrisjs/morris.min.js"></script>
+    <script src="~/assets/CanBoChiDoan/data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="~/assets/CanBoChiDoan/dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
+
